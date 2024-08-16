@@ -186,4 +186,19 @@ if (value !== 23){
 }
 
 // Make sure to use strict version of equal operator 
+    
+// switch functionality 
+
+day = "Sun"
+
+switch(day){
+    case "monday":
+        console.log("Today is Monday")
+        break;
+    case "tuesday":
+        console.log("Today is Tuesday") 
+        break;
+    default :
+    console.log("Not a valid day")
+}
           */ 
