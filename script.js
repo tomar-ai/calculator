@@ -119,4 +119,37 @@ console.log(friends.indexOf("tomar"))  // returns -1 as no tomar was found
 // include key word 
 console.log(friends.includes("John")) // true/false
 
-// objects
+// objects -- extension of the array so that we can add keys
+// this is the object - with object literal 
+// order does not matter here
+const jonas = {
+    firstName : "Jonas",
+    lastName : "Tomar", 
+    age : 23,
+    friends : ["ankit", "tomar", "value"]
+};
+
+console.log(jonas)
+console.log(jonas.lastName) // dot 
+console.log(jonas['age']) // add property name
+
+const nameKey = "Name";
+console.log(jonas['first' + nameKey]) // creating the property name properly 
+
+
+// const interaction = prompt("What do you want to know about Jonas");
+
+// if(jonas[interaction]){
+//         // console.log(jonas.interaction) // this will not work as user inout 
+//     console.log(`this is how take input from box`, jonas[interaction])
+// } else {
+//     console.log("invalid")
+// }
+
+
+jonas.location ="Amsterdam";
+jonas['school'] = "BITS";
+
+console.log(jonas)
+
+// object methods
