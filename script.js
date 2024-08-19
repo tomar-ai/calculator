@@ -153,3 +153,16 @@ jonas['school'] = "BITS";
 console.log(jonas)
 
 // object methods
+
+const myObject = {
+    firstName : "Jonas",
+    lastName : "Tomar", 
+    age : 23,
+    friends : ["ankit", "tomar", "value"],
+    calcAge : function(birthyear){
+        return 2038 - birthyear;
+    }
+};
+console.log(myObject.calcAge(2000))
+console.log(myObject['calcAge'](1990));
+console.log(myObject.age)
