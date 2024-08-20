@@ -166,3 +166,76 @@ const myObject = {
 console.log(myObject.calcAge(2000))
 console.log(myObject['calcAge'](1990));
 console.log(myObject.age)
+
+// getSummary 
+// getSummary : function(){
+//     return `${this.firstName} is ${this.age} years old`;
+// }
+// console.log(myObject.getSummary());
+
+
+// loops for iteration tasks 
+// for loops keep running untill condition is true
+for (let rep = 1; rep <=10; rep++){
+    console.log(`lifting wts rep`, rep);
+}
+
+const jonasArray = [
+    'Jonas',
+    "tomar",
+    2037-1995,
+    ["ankit", "tomar", "value"],
+    true,
+];
+
+const types = []
+
+// for (let i = 0; i<jonasArray.length; i++){
+//     if(typeof jonasArray[i] !== 'string') continue; // // continue and break
+
+
+//     // console.log(jonasArray[i]);
+//     types.push(jonasArray[i]);
+//     console.log(types); 
+    
+// }
+
+
+for (let i = 0; i<jonasArray.length; i++){
+    if(typeof jonasArray[i] === 'number') break; // // continue and break
+
+    // console.log(jonasArray[i]);
+    types.push(jonasArray[i]);
+    console.log(types); 
+    
+}
+
+
+const nextValue = [
+    'Jonas',
+    "tomar",
+    2037-1995,
+    ["ankit", "tomar", "value"],
+    true,
+    'start'
+];
+
+// backwards
+
+for(let i = nextValue.length - 1; i>0; i-- ){
+    console.log(nextValue[i])
+}
+
+// loop inside loop
+
+
+for(let e = 1; e<5; e--){
+    console.log("----start-----");
+    for (let a =0; a <3; a++){
+        console.log(`hello ${e} ${a}`);
+        if (a===3) break;
+
+    if (e===4) break;
+        
+    }
+}
