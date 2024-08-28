@@ -108,3 +108,6 @@ function init(){
 init()
 
 // ,map, reduce , filter to be continued here 
+// will be used for project creations
+// comppleted fundamentals from reactjs course, but needs to complete in detail
+
